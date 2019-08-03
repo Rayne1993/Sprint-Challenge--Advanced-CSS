@@ -1,8 +1,23 @@
 // Home Content
+header {
+  background: @nav-bg;
+
+  h1 {
+    font-size: 3.5rem;
+    .flex();
+    padding: 10px;
+  }
+}
 
 .home {
+  
 
   .intro {
+    background: white;
+
+    img {
+      border-radius: 10px;
+    }
 
     h2 {
       padding: 15px;
@@ -57,7 +72,13 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      button {
+        .signup(@btn-bg-color, @radius);
+
+          &:hover {
+            background: white;
+            color: @btn-bg-color;
+        }
       }
     }
 
